@@ -29,22 +29,25 @@ header{
     background-color: #0084fd;
 }
 
-
 .row-header{
     display: flex;
     justify-content: space-between;
     height: 100px;
-    margin: 0 10px;
+    margin: 0 2rem;
 }
 
 .logo{
-    background-color: blue;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger{
-    background-color: red;
-    width: 100px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-right{
@@ -86,6 +89,30 @@ header{
 @media screen and (min-width: 768px){
     .container{
         max-width: 750px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .menu-right{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-right button{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: white;
+        border: none;
+    }
+
+    .menu-right a{
+        text-decoration: none;
+        color: white;
+        margin-right: 1.5rem;
     }
 
     .row-section1{
