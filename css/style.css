@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'PT Serif', serif;
+}
 /* UTILITI */
 .container{
     max-width: 600px;
@@ -64,14 +68,57 @@ header{
 
 .col-big, .col-30{
     background-color: #B5ddff;
-    height: 200px;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.col-big h2, .col-30 h2{
+    color: #0084fd;
+    font-size: 1.6rem;
+}
+
+.col-big p, .col-30 p{
+    margin: 30px 0;
+    font-size: 1rem;
+    color: rgb(63, 63, 63);
+}
+
+.col-big button{
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #0084fd;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.col-big{
+    height: 45rem;
+    position: relative;
+}
+
+.col-big img{
+    width: 24rem;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.col-30{
+    text-align: center;
+}
+
+.col-30 i{
+    font-size: 5rem;
+    color: #0084fd;
+    margin-bottom: 2rem;
 }
 
 /* SECTION 2 */
 
 .section-2{
     background-color: #9792e4;
-    height: 450px;
 }
 
 .row-section2{
@@ -81,9 +128,39 @@ header{
     margin: 10px;
 }
 
-.col-50{
-    background-color: red;
-    height: 200px;
+.col-50 img{
+   width: 100%;
+}
+
+.col-50 h2, .col-50 p{
+    color: white;
+}
+
+.col-50 h2{
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+.col-50 p{
+    font-size: 1.2rem;
+}
+
+.planning-2{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.planning-2 p, .planning-2 h2{
+    color: black;
+}
+
+.planning-2 i{
+    margin: 40px;
+    font-size: 1.3rem;
+    background-color: #9792e4;
+    padding: 20px 23px;
+    border-radius: 100%;
 }
 
 @media screen and (min-width: 768px){
@@ -124,6 +201,12 @@ header{
         width: calc(100% / 3 * 2 - 20px);
     }
 
+    .col-big img{
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+
     .col-30{
         width: calc(100% / 3 - 20px);
     }
@@ -132,6 +215,22 @@ header{
 @media screen and (min-width: 991px){
     .container{
         max-width: 980px;
+    }
+
+    .row-section2{
+        flex-direction: row;
+    }
+
+    .col-50 img{
+        width: 50%;
+    }
+
+    .col-50 h2{
+        margin: 80px 0 30px 0;
+    }
+
+    .planning-2{
+        margin-top: 30rem;
     }
 }
 
