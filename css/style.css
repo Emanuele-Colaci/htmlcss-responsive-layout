@@ -343,12 +343,16 @@ header{
 
 ul{
     padding-bottom: 50px;
-    display: flex;
 }
 
 li{
     margin-left: 4px;
     display: inline;
+}
+
+li i{
+    font-size: 0.7rem;
+    margin-left: 8px;
 }
 
 li:nth-child(1), li:nth-child(2){
@@ -598,6 +602,10 @@ footer{
     .container{
         max-width: 1150px;
     }
+
+    .col-big {
+        height: 70vh;
+      }
 
     .col-big img{
         width: 13rem;
