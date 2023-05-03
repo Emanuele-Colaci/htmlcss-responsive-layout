@@ -343,10 +343,11 @@ header{
 
 ul{
     padding-bottom: 50px;
+    
 }
 
 li{
-    margin-left: 4px;
+    margin-left: 20px;
     display: inline;
 }
 
