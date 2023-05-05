@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'PT Serif', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /* UTILITI */
 .container{
@@ -94,16 +94,11 @@ header{
     font-size: 1.2rem;
 }
 
-.col-big{
-    height: 85vh;
-    position: relative;
-}
-
 .col-big img{
-    width: 20rem;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
+    width: 87%;
+    position: relative;
+    bottom: -45px;
+    right: 108px;
     transform: translate(50%);
 }
 
@@ -434,11 +429,12 @@ footer{
         width: calc(100% / 3 * 2 - 20px);
         display: flex;
         flex-direction: column;
-        height: 70vh;
     }
 
     .col-big img{
-        width: 15rem;
+        width: 71%;
+        right: 65px;
+        bottom: -40px;
     }
 
     .col-30{
@@ -529,10 +525,6 @@ footer{
         max-width: 980px;
     }
 
-    .col-big{
-        height: 49vh;
-    }
-
     .col-big h2{
         font-size: 2rem;
     }
@@ -547,10 +539,16 @@ footer{
         font-size: 0.7rem;
     }
 
-    .col-big img{
-        bottom: 0;
-        left: 35%;
+    .col-big{
+        height: 92vh;
     }
+
+    .col-big img{
+        right: -183px;
+        bottom: 161px;
+        width: 47%;
+    }
+    
 
     .row-section2{
         flex-direction: row;
@@ -604,12 +602,14 @@ footer{
         max-width: 1150px;
     }
 
-    .col-big {
-        height: 70vh;
-      }
+    .col-big{
+        height: 92vh;
+    }
 
     .col-big img{
-        width: 13rem;
+        width: 19rem;
+        right: -210px;
+        bottom: 194px;
     }
 
     .col-section5 span{
